@@ -1,0 +1,684 @@
+# //  Questa Sim-64
+# //  Version 2020.4 linux_x86_64 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vlog -F compile_sv.f
+# QuestaSim-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 10:38:50 on Sep 16,2024
+# vlog -reportprogress 300 -F compile_sv.f 
+# -- Compiling module register_file
+# ** Note: (vlog-2286) ../tb/RAL_pkg.svh(1): Using implicit +incdir+/eda/mentor/2020-21/RHELx86/QUESTA-CORE-PRIME_2020.4/questasim/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Compiling package RAL_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Compiling interface RF_if
+# -- Compiling module RF_wrap
+# -- Compiling package my_pkg
+# -- Importing package RAL_pkg
+# -- Compiling module top
+# -- Importing package my_pkg
+# 
+# Top level modules:
+# 	top
+# End time: 10:38:52 on Sep 16,2024, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+vsim -c -sv_seed random -do sim.do top
+# vsim -c -sv_seed random -do "sim.do" top 
+# Start time: 10:39:07 on Sep 16,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.RF_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.RAL_pkg(fast)
+# Loading work.my_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.top(fast)
+# Loading work.RF_wrap(fast)
+# Loading /eda/mentor/2020-21/RHELx86/QUESTA-CORE-PRIME_2020.4/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# Sv_Seed = 2805853885
+# do sim.do
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO ../tb/RF_tb.sv(479) @ 0: reporter [TOP] TEST STARTIG...
+# UVM_INFO @ 0: reporter [RNTST] Running test test...
+# UVM_INFO ../tb/RF_tb.sv(419) @ 0: uvm_test_top [test] START BUILDING PHASE
+# UVM_INFO ../tb/RF_tb.sv(221) @ 10: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 1 | WR = 0 | ADD_WR = 0 | DATAIN = 0000000000000000 |  OUT1 = xxxxxxxxxxxxxxxx |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 10: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 10: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 20: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 1 | WR = 0 | ADD_WR = 0 | DATAIN = 0000000000000000 |  OUT1 = xxxxxxxxxxxxxxxx |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 20: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 20: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 30: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 1 | WR = 0 | ADD_WR = 0 | DATAIN = 0000000000000000 |  OUT1 = xxxxxxxxxxxxxxxx |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 30: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 30: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 40: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = d | DATAIN = 1fff498f9b72fb98 |  OUT1 = xxxxxxxxxxxxxxxx |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 40: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 40: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 13 DESIRED VALUE: 1fff498f9b72fb98, MIRRORED VALUE: 1fff498f9b72fb98
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 50: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = d | DATAIN = c05aa565568b4c18 |  OUT1 = xxxxxxxxxxxxxxxx |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 50: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 50: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 13 DESIRED VALUE: c05aa565568b4c18, MIRRORED VALUE: c05aa565568b4c18
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 60: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 4 | DATAIN = 5a2b4b211c4c62a0 |  OUT1 = 1fff498f9b72fb98 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 60: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 60: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 4 DESIRED VALUE: 5a2b4b211c4c62a0, MIRRORED VALUE: 5a2b4b211c4c62a0
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 70: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 1 | DATAIN = 1937ae109135177f |  OUT1 = 1fff498f9b72fb98 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 70: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 70: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 1 DESIRED VALUE: 1937ae109135177f, MIRRORED VALUE: 1937ae109135177f
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 80: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 8 | DATAIN = 956847d2c1255bdf |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 80: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 80: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 8 DESIRED VALUE: 956847d2c1255bdf, MIRRORED VALUE: 956847d2c1255bdf
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 90: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 3 | DATAIN = aa95287e3dbf1753 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 90: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 90: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 3 DESIRED VALUE: aa95287e3dbf1753, MIRRORED VALUE: aa95287e3dbf1753
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 100: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = a | DATAIN = 776d5a8d0069d75a |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 100: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 100: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 10 DESIRED VALUE: 776d5a8d0069d75a, MIRRORED VALUE: 776d5a8d0069d75a
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 110: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 0 | DATAIN = 11015e7e34e9c084 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 110: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 110: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: 11015e7e34e9c084, MIRRORED VALUE: 11015e7e34e9c084
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 120: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 3 | DATAIN = eee6d7cf91d73796 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 120: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 120: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 3 DESIRED VALUE: eee6d7cf91d73796, MIRRORED VALUE: eee6d7cf91d73796
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 130: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = a | DATAIN = d6a7ec62c18e41b4 |  OUT1 = aa95287e3dbf1753 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 130: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 130: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 10 DESIRED VALUE: d6a7ec62c18e41b4, MIRRORED VALUE: d6a7ec62c18e41b4
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 140: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 5 | DATAIN = f4fdcaf6ba0b6fc6 |  OUT1 = aa95287e3dbf1753 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 140: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 140: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 5 DESIRED VALUE: f4fdcaf6ba0b6fc6, MIRRORED VALUE: f4fdcaf6ba0b6fc6
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 150: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 6 | DATAIN = 120a00ab672398b3 |  OUT1 = aa95287e3dbf1753 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 150: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 150: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 6 DESIRED VALUE: 120a00ab672398b3, MIRRORED VALUE: 120a00ab672398b3
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 160: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 3 | DATAIN = bc1546a1784dc28d |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 160: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 160: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 3 DESIRED VALUE: bc1546a1784dc28d, MIRRORED VALUE: bc1546a1784dc28d
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 170: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 9 | DATAIN = 4089f0fd8267792f |  OUT1 = aa95287e3dbf1753 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 170: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 170: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 9 DESIRED VALUE: 4089f0fd8267792f, MIRRORED VALUE: 4089f0fd8267792f
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 180: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = f | DATAIN = fc9ce9802f1dd658 |  OUT1 = aa95287e3dbf1753 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 180: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 180: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 15 DESIRED VALUE: fc9ce9802f1dd658, MIRRORED VALUE: fc9ce9802f1dd658
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 190: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = a | DATAIN = d975a18e22a28ad6 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 190: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 190: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 10 DESIRED VALUE: d975a18e22a28ad6, MIRRORED VALUE: d975a18e22a28ad6
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 200: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 4 | DATAIN = 8fc8493b0abf9354 |  OUT1 = d6a7ec62c18e41b4 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 200: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 200: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 4 DESIRED VALUE: 8fc8493b0abf9354, MIRRORED VALUE: 8fc8493b0abf9354
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 210: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 1 | DATAIN = f2623dc7a1c5b668 |  OUT1 = 5a2b4b211c4c62a0 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 210: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 210: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 1 DESIRED VALUE: f2623dc7a1c5b668, MIRRORED VALUE: f2623dc7a1c5b668
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 220: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 7 | DATAIN = 96e8ae1246308e05 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 220: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 220: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 7 DESIRED VALUE: 96e8ae1246308e05, MIRRORED VALUE: 96e8ae1246308e05
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 230: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 9 | DATAIN = 7401dd4f4af55988 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 230: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 230: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 9 DESIRED VALUE: 7401dd4f4af55988, MIRRORED VALUE: 7401dd4f4af55988
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 240: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 1 | DATAIN = bf5298671bd93a7b |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 240: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 240: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 1 DESIRED VALUE: bf5298671bd93a7b, MIRRORED VALUE: bf5298671bd93a7b
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 250: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = f | DATAIN = bdf8e2c44494dfd1 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 250: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 250: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 15 DESIRED VALUE: bdf8e2c44494dfd1, MIRRORED VALUE: bdf8e2c44494dfd1
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 260: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 0 | DATAIN = 8046d8410ae00ecf |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 260: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 260: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: 8046d8410ae00ecf, MIRRORED VALUE: 8046d8410ae00ecf
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 270: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 4 | DATAIN = e799917dda57c4f0 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 270: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 270: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 4 DESIRED VALUE: e799917dda57c4f0, MIRRORED VALUE: e799917dda57c4f0
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 280: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 1 | DATAIN = c97cbae6946ca4b8 |  OUT1 = 5a2b4b211c4c62a0 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 280: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 280: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 1 DESIRED VALUE: c97cbae6946ca4b8, MIRRORED VALUE: c97cbae6946ca4b8
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 290: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = b | DATAIN = b203d308072ae3f8 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 290: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 290: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 11 DESIRED VALUE: b203d308072ae3f8, MIRRORED VALUE: b203d308072ae3f8
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 300: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 1 | DATAIN = 5473b4972f251080 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 300: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 300: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 1 DESIRED VALUE: 5473b4972f251080, MIRRORED VALUE: 5473b4972f251080
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 310: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 0 | DATAIN = 805e4440f2f50f9b |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 310: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 310: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: 805e4440f2f50f9b, MIRRORED VALUE: 805e4440f2f50f9b
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 320: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = c | DATAIN = b1969a4f2a1c532a |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 320: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 320: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 12 DESIRED VALUE: b1969a4f2a1c532a, MIRRORED VALUE: b1969a4f2a1c532a
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 330: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = b | DATAIN = a9f82334aa42eb1c |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 330: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 330: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 11 DESIRED VALUE: a9f82334aa42eb1c, MIRRORED VALUE: a9f82334aa42eb1c
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 340: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 0 | DATAIN = ffc0024d225abd3a |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 340: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 340: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: ffc0024d225abd3a, MIRRORED VALUE: ffc0024d225abd3a
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 350: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 8 | DATAIN = d56dba89f6187631 |  OUT1 = 805e4440f2f50f9b |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 350: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 350: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 8 DESIRED VALUE: d56dba89f6187631, MIRRORED VALUE: d56dba89f6187631
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 360: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 4 | DATAIN = f82c14d1be230cb7 |  OUT1 = 805e4440f2f50f9b |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 360: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 360: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 4 DESIRED VALUE: f82c14d1be230cb7, MIRRORED VALUE: f82c14d1be230cb7
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 370: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 3 | DATAIN = f8756a5cfc62309d |  OUT1 = 805e4440f2f50f9b |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 370: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 370: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 3 DESIRED VALUE: f8756a5cfc62309d, MIRRORED VALUE: f8756a5cfc62309d
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 380: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = e | DATAIN = e5a1a3f96e384cff |  OUT1 = 805e4440f2f50f9b |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 380: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 380: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 14 DESIRED VALUE: e5a1a3f96e384cff, MIRRORED VALUE: e5a1a3f96e384cff
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 390: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = e | DATAIN = cbd764537a5fd36b |  OUT1 = 805e4440f2f50f9b |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 390: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 390: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 14 DESIRED VALUE: cbd764537a5fd36b, MIRRORED VALUE: cbd764537a5fd36b
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 400: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = c | DATAIN = bb5fc2bfd4fa1b11 |  OUT1 = e5a1a3f96e384cff |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 400: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 400: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 12 DESIRED VALUE: bb5fc2bfd4fa1b11, MIRRORED VALUE: bb5fc2bfd4fa1b11
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 410: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 6 | DATAIN = 57fb5ede911cbc07 |  OUT1 = e5a1a3f96e384cff |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 410: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 410: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 6 DESIRED VALUE: 57fb5ede911cbc07, MIRRORED VALUE: 57fb5ede911cbc07
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 420: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = f | DATAIN = f13c632a49bdd7ae |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 420: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 420: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 15 DESIRED VALUE: f13c632a49bdd7ae, MIRRORED VALUE: f13c632a49bdd7ae
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 430: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 6 | DATAIN = 87a353e22bee49d6 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 430: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 430: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 6 DESIRED VALUE: 87a353e22bee49d6, MIRRORED VALUE: 87a353e22bee49d6
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 440: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = c | DATAIN = 58ea81b4ea07b715 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 440: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 440: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 12 DESIRED VALUE: 58ea81b4ea07b715, MIRRORED VALUE: 58ea81b4ea07b715
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 450: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 6 | DATAIN = 16154600c533ac23 |  OUT1 = bb5fc2bfd4fa1b11 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 450: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 450: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 6 DESIRED VALUE: 16154600c533ac23, MIRRORED VALUE: 16154600c533ac23
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 460: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = e | DATAIN = d03576b6f871a477 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 460: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 460: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 14 DESIRED VALUE: d03576b6f871a477, MIRRORED VALUE: d03576b6f871a477
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 470: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 0 | DATAIN = 947856990dfcad74 |  OUT1 = e5a1a3f96e384cff |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 470: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 470: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: 947856990dfcad74, MIRRORED VALUE: 947856990dfcad74
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 480: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = b | DATAIN = 22693692e3101b8d |  OUT1 = e5a1a3f96e384cff |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 480: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 480: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 11 DESIRED VALUE: 22693692e3101b8d, MIRRORED VALUE: 22693692e3101b8d
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 490: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 0 | DATAIN = d84e2235c8c411d1 |  OUT1 = a9f82334aa42eb1c |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 490: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 490: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: d84e2235c8c411d1, MIRRORED VALUE: d84e2235c8c411d1
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 500: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 0 | DATAIN = 03e26ddbed6cdb6b |  OUT1 = 947856990dfcad74 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 500: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 500: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: 3e26ddbed6cdb6b, MIRRORED VALUE: 3e26ddbed6cdb6b
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 510: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 1 | ADD_WR = 9 | DATAIN = 189c315a2f089f59 |  OUT1 = 947856990dfcad74 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 510: reporter [adapter] BUS2REG: MAKING A UVM_WRITE OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 510: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 9 DESIRED VALUE: 189c315a2f089f59, MIRRORED VALUE: 189c315a2f089f59
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 520: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = d | DATAIN = 4b896c1785cde032 |  OUT1 = 947856990dfcad74 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 520: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 520: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 13 DESIRED VALUE: 4b896c1785cde032, MIRRORED VALUE: 4b896c1785cde032
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 525: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 530: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 2 | DATAIN = 340181fbe18409e2 |  OUT1 = 1fff498f9b72fb98 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 530: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 530: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 2 DESIRED VALUE: 340181fbe18409e2, MIRRORED VALUE: 340181fbe18409e2
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 535: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 535: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 0 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 535: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 540: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 0 | DATAIN = 0000000000000000 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 540: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 540: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 0 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 545: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 545: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 1 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 545: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 550: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 1 | DATAIN = 0000000000000000 |  OUT1 = 03e26ddbed6cdb6b |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 550: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 550: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 1 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 555: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 555: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 2 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 555: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 560: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 2 | DATAIN = 0000000000000000 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 560: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 560: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 2 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 565: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 565: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 3 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 565: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 570: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 3 | DATAIN = 0000000000000000 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 570: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 570: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 3 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 575: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 575: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 4 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 575: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 580: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 4 | DATAIN = 0000000000000000 |  OUT1 = f8756a5cfc62309d |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 580: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 580: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 4 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 585: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 585: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 5 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 585: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 590: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 5 | DATAIN = 0000000000000000 |  OUT1 = f82c14d1be230cb7 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 590: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 590: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 5 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 595: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 595: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 6 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 595: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 600: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 6 | DATAIN = 0000000000000000 |  OUT1 = f4fdcaf6ba0b6fc6 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 600: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 600: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 6 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 605: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 605: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 7 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 605: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 610: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 7 | DATAIN = 0000000000000000 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 610: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 610: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 7 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 615: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 615: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 8 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 615: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 620: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 8 | DATAIN = 0000000000000000 |  OUT1 = 0000000000000000 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 620: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 620: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 8 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 625: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 625: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 9 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 625: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 630: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = 9 | DATAIN = 0000000000000000 |  OUT1 = d56dba89f6187631 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 630: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 630: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 9 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 635: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 635: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 10 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 635: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 640: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = a | DATAIN = 0000000000000000 |  OUT1 = 189c315a2f089f59 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 640: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 640: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 10 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 645: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 645: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 11 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 645: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 650: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = b | DATAIN = 0000000000000000 |  OUT1 = d6a7ec62c18e41b4 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 650: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 650: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 11 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 655: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 655: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 12 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 655: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 660: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = c | DATAIN = 0000000000000000 |  OUT1 = a9f82334aa42eb1c |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 660: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 660: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 12 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 665: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 665: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 13 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 665: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 670: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = d | DATAIN = 0000000000000000 |  OUT1 = bb5fc2bfd4fa1b11 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 670: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 670: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 13 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 675: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 675: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 14 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(317) @ 675: reporter [adapter] REG2BUS: ORDERING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(221) @ 680: uvm_test_top.e0.e0.ag0.mntr [monitor] TRANSACTION RECEIVED: RESET = 0 | WR = 0 | ADD_WR = e | DATAIN = 0000000000000000 |  OUT1 = 1fff498f9b72fb98 |
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 680: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(224) @ 680: uvm_test_top.e0.e0.ag0.mntr [monitor] 
+#  REGISTER 14 DESIRED VALUE: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO ../tb/RF_tb.sv(334) @ 685: reporter [adapter] BUS2REG: MAKING A UVM_READ OPERATION
+# 
+# UVM_INFO ../tb/RF_tb.sv(130) @ 685: uvm_test_top.e0.e0.ag0.sqncr@@rw_model [regmodel_rw] 
+#  REGISTER 15 VALUE READ: 0, MIRRORED VALUE: 0
+# 
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 685: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  258
+# UVM_WARNING :    0
+# UVM_ERROR :    0
+# UVM_FATAL :    0
+# ** Report counts by id
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [TOP]     1
+# [adapter]   100
+# [monitor]   136
+# [regmodel_rw]    16
+# [test]     1
+# ** Note: $finish    : /eda/mentor/2020-21/RHELx86/QUESTA-CORE-PRIME_2020.4/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 685 ns  Iteration: 61  Instance: /top
+# 1
+# Break in Task uvm_pkg/uvm_root::run_test at /eda/mentor/2020-21/RHELx86/QUESTA-CORE-PRIME_2020.4/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# ** Note: (vsim-17388) No matching coverage data found.
